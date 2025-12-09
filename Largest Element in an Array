@@ -1,0 +1,23 @@
+Find Largest element in an array
+
+package Array;
+
+import java.util.Arrays;
+
+public class LargestNumber {
+
+	public static void main(String[] args) {
+		int[] nums= {12,13,1,10,34,10};
+		System.out.println("The Elements are "+Arrays.toString(nums));
+		
+		int max=nums[0];
+		
+		for(int i=0;i<nums.length;i++) {
+			if(nums[i]>max) {
+				max=nums[i];
+			}
+		}
+		System.out.println("The Largest Element is "+max);
+	}
+
+}
